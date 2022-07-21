@@ -1,0 +1,242 @@
+body {
+    background: #f3f4f9;
+}
+
+#content {
+    margin: 0px auto;
+    padding: 0;
+    width: 80%;
+}
+
+.form-dots {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+li {
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.form-dots ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-dots ul li {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 700;
+    width: 16.66666%;
+    position: relative;
+}
+
+.form-dots ul li:first-child {
+    color: rgba(0, 0, 0, 1);
+}
+
+.form-dots ul li:last-child:after {
+    display: none;
+}
+
+.form-dots ul li:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #979797;
+    background: #fff;
+}
+
+.form-dots ul li:nth-child(n):before {
+    border: 1px solid #979797;
+    font-family: FSAlbertTrial;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    color: #979797;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-dots ul li:first-child:before {
+    border: 1px solid #ff9e1b;
+    content: "1";
+    color: #ff9e1b;
+}
+
+.form-dots ul li:nth-child(2):before {
+    content: "2";
+}
+
+.form-dots ul li:nth-child(3):before {
+    content: "3";
+}
+
+.form-dots ul li:nth-child(4):before {
+    content: "4";
+}
+
+.form-dots ul li:nth-child(5):before {
+    content: "5";
+}
+
+.form-dots ul li:nth-child(6):before {
+    content: "6";
+}
+
+.form-dots ul li:after {
+    content: '';
+    position: absolute;
+    top: 19px; 
+    background: rgba(0, 0, 0, 0.12);
+    margin: 4px 32px 15px 0;
+    width: 93px;
+    height: 1px;
+}
+
+/* Step 2 enabled */
+
+.step2 ul li:nth-child(2):before {
+    border: 2px solid #ff9e1b;
+    color: #ff9e1b;
+}
+
+.step2 ul li:nth-child(1):after {
+    background: #ff9e1b;
+}
+
+/* Step 3 enabled */
+
+.step3 ul li:nth-child(3):before {
+    border: 2px solid #ff9e1b;
+    color: #ff9e1b;
+}
+
+.step3 ul li:nth-child(2):after {
+    background: #ff9e1b;
+}
+
+/* Step 4 enabled */
+
+.step4 ul li:nth-child(4):before {
+    border: 2px solid #ff9e1b;
+    color: #ff9e1b;
+}
+
+.step4 ul li:nth-child(3):after {
+    background: #ff9e1b;
+}
+
+/* Step 5 enabled */
+
+.step5 ul li:nth-child(5):before {
+    border: 2px solid #ff9e1b;
+    color: #ff9e1b;
+}
+
+.step5 ul li:nth-child(4):after {
+    background: #ff9e1b;
+}
+
+/* Step 6 enabled */
+
+.step6 ul li:nth-child(6):before {
+    border: 2px solid #ff9e1b;
+    color: #ff9e1b;
+}
+
+.step6 ul li:nth-child(5):after {
+    background: #ff9e1b;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#backButton {
+    color: #ff9e1b;
+    text-decoration: none;
+    border: #ff9e1b;
+    padding: 10px;
+}
+
+#nextButton {
+    color: #fff;
+    text-decoration: none;
+    background: #ff9e1b;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.nextButtonDisabled {
+    background: rgb(213, 214, 219) !important;
+    color: rgb(135, 136, 139) !important;
+}
+
+#stepsContentContainer {
+    width: 739px;
+    margin: 0px auto;
+}
+
+#step1Content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+}
+
+.hoverButton {
+    width: 160px;
+    height: 40px;
+    flex-grow: 0;
+    text-align: center;
+    font-family: FSAlbertTrial;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 40px;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 8px auto;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+}
+
+.hoverButton:hover {
+    cursor: pointer;
+    margin: 7px auto;
+    border: 2px solid #ff9e1b;
+}
+
+.hoverButtonClicked {
+    margin: 7px auto;
+    border: 2px solid #ff9e1b;
+}
+
+.hidden {
+    display: none !important;
+}
